@@ -3,17 +3,18 @@
 
 `sudo apt update`
 
-![update packages](PROJECT-1\images\update packages .PNG)
+![update packages](./images/update%20packages%20.PNG)
+
 
 `sudo apt install apache2`
-![install apache](PROJECT-1\images\install apache2.PNG)
+![install apache](./images/install%20apache2.PNG)
 
-![install successful](PROJECT-1\images\install successful.PNG)
+![install successful](./images/install%20successful.PNG)
 
 `sudo systemctl status apache2`
-![apache running](PROJECT-1\images\apache running confirmed.PNG)
+![apache running](./images/apache%20running%20confirmed.PNG)
 
 *http://54.147.77.70/*
-![apache running](PROJECT-1\images\Apache web server over the internet.PNG)
+![apache running](./images/Apache%20web%20server%20over%20the%20internet.PNG)
 
 
