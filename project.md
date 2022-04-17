@@ -12,7 +12,6 @@
 ![install successful](./images/install%20successful.PNG)
 
 `sudo systemctl status apache2`
-
 ![apache running](./images/apache%20running%20confirmed.PNG)
 
 *http://54.147.77.70/*
