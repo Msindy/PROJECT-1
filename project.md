@@ -1,5 +1,5 @@
 # LAMP STACK IMPLEMENTATION DOCUMENTATION
-## Install Apache
+## **Install Apache**
 
 `sudo apt update`
 
@@ -21,3 +21,29 @@
 ![apache running](./images/Apache%20web%20server%20over%20the%20internet.PNG)
 
 
+## **Installing MYSQL**
+
+`sudo apt install mysql-server`
+![apache running](./images/SQL%20installation.PNG)
+
+![apache running](./images/SQL%20installation%20successful.PNG)
+
+
+`sudo mysql_secure_installation`
+![apache running](./images/security%20script.PNG)
+
+![apache running](./images/sql%20password%20validation.PNG)
+
+`mysql>exit`
+![apache running](./images/sql%20exit.PNG)
+
+
+## **Installing PHP**
+
+`sudo apt install php libapache2-mod-php php-mysql`
+![apache running](./images/php%20installation.PNG)
+
+![apache running](./images/php%20installation%20successful.PNG)
+
+`php -v`
+![apache running](./images/php%20version.PNG)
