@@ -45,5 +45,51 @@
 
 ![apache running](./images/php%20installation%20successful.PNG)
 
-`php -v`
+`php -v `
 ![apache running](./images/php%20version.PNG)
+
+## **Creating a Virtual Host**
+
+`sudo mkdir /var/www/projectlamp`
+
+![apache running](./images/CREATING%20A%20VIRTUAL%20HOST.PNG)
+
+ `sudo chown -R $USER:$USER /var/www/projectlamp`
+ `sudo vi /etc/apache2/sites-available/projectlamp.conf`
+ `<VirtualHost *:80>
+    ServerName projectlamp
+    ServerAlias www.projectlamp 
+    ServerAdmin webmaster@localhost
+    DocumentRoot /var/www/projectlamp
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>`
+
+![apache running](./images/bare%20bone%20config.PNG)
+
+1.Hit the esc button on the keyboard
+
+2.Type :
+
+3.Type wq. w for write and q for quit
+
+4.Hit ENTER to save the file
+
+`sudo ls /etc/apache2/sites-available`
+
+`sudo a2ensite projectlamp`
+
+`sudo a2dissite 000-default`
+
+`sudo apache2ctl configtest`
+
+`sudo systemctl reload apache2`
+
+`sudo echo 'Hello LAMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectlamp/index.html`
+
+*Output from ip address*
+![apache running](./images/website%20ip%20url.PNG)
+
+
+*Output from public dns address*
+![apache running](./images/public%20dns.PNG)
